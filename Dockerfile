@@ -1,7 +1,6 @@
-FROM python:3.6
-MAINTAINER Shekhar Gulati "shekhargulati84@gmail.com"
+FROM python:3.7.5-stretch
+MAINTAINER pavan
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
-CMD ["app.py"]
+CMD ["./kubectl-report-gen-v1 -command_file=config.csv"]
