@@ -1,0 +1,21 @@
+report_group,report_name,command,namespaced
+A,k8s_customresourcedefinitions,"kubectl get crd",False
+A,k8s_apiservices,"kubectl get apiservices",False
+A,k8s_persistentvolumes,"kubectl get pv",False
+B,k8s_podsecuritypolicies,"kubectl get podsecuritypolicies",False
+B,k8s_storageclasses,"kubectl get storageclasses",False
+U,k8s_ingresses,"kubectl get ingresses",True
+C,k8s_networkpolicies,"kubectl get networkpolicies",True
+E,k8s_priorityclasses,"kubectl get priorityclasses",False
+F,k8s_deployments,"kubectl get deployments",True
+G,k8s_replicasets,"kubectl get replicasets",True
+K,k8s_horizontalpodautoscalers,"kubectl get hpa",True
+K,k8s_verticalpodautoscalers,"kubectl get verticalpodautoscalers",True
+U,k8s_verticalpodautoscalercheckpoints,"kubectl get verticalpodautoscalercheckpoints",True
+U,k8s_configmaps,"kubectl get configmaps",True
+U,k8s_cronjobs,"kubectl get cronjob",True
+U,k8s_endpoints,"kubectl get endpoints",True
+U,k8s_gateways,"kubectl get gateway",True
+U,k8s_daemonsets,"kubectl get daemonsets",True
+U,k8s_statefulsets,"kubectl get statefulsets",True
+U,k8s_poddisruptionbudgets,"kubectl get poddisruptionbudgets",True
